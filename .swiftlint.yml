@@ -1,0 +1,15 @@
+included:
+  - LocalMeet
+  - LocalMeetTests
+
+excluded:
+  - build
+  - DerivedData
+  - .build
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+
+disabled_rules:
+  - trailing_whitespace

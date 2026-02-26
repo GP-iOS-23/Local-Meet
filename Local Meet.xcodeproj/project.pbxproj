@@ -6,6 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7019338E2F50BF5D0036E3D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7019338D2F50BF5D0036E3D7 /* Alamofire */; };
+		704FB09C2F50C79B0032DB59 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 704FB09B2F50C79B0032DB59 /* Alamofire */; };
+		705B83F92F505D59005984B7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 705B83F82F505D59005984B7 /* Moya */; settings = {ATTRIBUTES = (Weak, ); }; };
+		705B83FB2F505D5E005984B7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 705B83FA2F505D5E005984B7 /* RealmSwift */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7092BFA82F3E472A00AFF096 /* release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7092BFA72F3E472A00AFF096 /* release.xcconfig */; };
+		7092BFAA2F3E473000AFF096 /* debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7092BFA92F3E473000AFF096 /* debug.xcconfig */; };
+		7092BFAC2F3E474100AFF096 /* staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7092BFAB2F3E474100AFF096 /* staging.xcconfig */; };
+		70B04E542F507A8C0034347E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C82F9C2F5072EA0076BA2A /* XCTest.framework */; };
+		70C7AAA62F464F9C00CDD0DE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 70C7AAA52F464F9C00CDD0DE /* Moya */; };
+		70EDCA262F46518300E33CAC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 70EDCA252F46518300E33CAC /* RealmSwift */; settings = {ATTRIBUTES = (Required, ); }; };
+		70EDCA272F4651DE00E33CAC /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 70EDCA252F46518300E33CAC /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7092BF7C2F3E3EEC00AFF096 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -14,20 +28,51 @@
 			remoteGlobalIDString = 7092BF6D2F3E3EEA00AFF096;
 			remoteInfo = "Local Meet";
 		};
-		7092BF862F3E3EEC00AFF096 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7092BF662F3E3EE900AFF096 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7092BF6D2F3E3EEA00AFF096;
-			remoteInfo = "Local Meet";
-		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		705B83FC2F505D5E005984B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707BCB562F45004A007D95B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70EDCA272F4651DE00E33CAC /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		70109FBB2F50A3B10023F389 /* Local Meet.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Local Meet.xctestplan"; sourceTree = "<group>"; };
 		7092BF6E2F3E3EEA00AFF096 /* Local Meet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Local Meet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7092BF7B2F3E3EEC00AFF096 /* Local MeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Local MeetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7092BF852F3E3EEC00AFF096 /* Local MeetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Local MeetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7092BFA72F3E472A00AFF096 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
+		7092BFA92F3E473000AFF096 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		7092BFAB2F3E474100AFF096 /* staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = staging.xcconfig; sourceTree = "<group>"; };
+		70C82F9C2F5072EA0076BA2A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		70109FB92F50987E0023F389 /* Exceptions for "Local MeetTests" folder in "Compile Sources" phase from "Local MeetTests" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 7092BF772F3E3EEC00AFF096 /* Sources */;
+			membershipExceptions = (
+				Stubs/EmptyEvents.json,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7092BF702F3E3EEA00AFF096 /* Local Meet */ = {
@@ -37,12 +82,10 @@
 		};
 		7092BF7E2F3E3EEC00AFF096 /* Local MeetTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				70109FB92F50987E0023F389 /* Exceptions for "Local MeetTests" folder in "Compile Sources" phase from "Local MeetTests" target */,
+			);
 			path = "Local MeetTests";
-			sourceTree = "<group>";
-		};
-		7092BF882F3E3EEC00AFF096 /* Local MeetUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Local MeetUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704FB09C2F50C79B0032DB59 /* Alamofire in Frameworks */,
+				70EDCA262F46518300E33CAC /* RealmSwift in Frameworks */,
+				70C7AAA62F464F9C00CDD0DE /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,26 +105,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7092BF822F3E3EEC00AFF096 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7019338E2F50BF5D0036E3D7 /* Alamofire in Frameworks */,
+				70B04E542F507A8C0034347E /* XCTest.framework in Frameworks */,
+				705B83FB2F505D5E005984B7 /* RealmSwift in Frameworks */,
+				705B83F92F505D59005984B7 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		705B83F72F505D59005984B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70C82F9C2F5072EA0076BA2A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7092BF652F3E3EE900AFF096 = {
 			isa = PBXGroup;
 			children = (
+				70109FBB2F50A3B10023F389 /* Local Meet.xctestplan */,
 				7092BF702F3E3EEA00AFF096 /* Local Meet */,
 				7092BF7E2F3E3EEC00AFF096 /* Local MeetTests */,
-				7092BF882F3E3EEC00AFF096 /* Local MeetUITests */,
 				7092BF6F2F3E3EEA00AFF096 /* Products */,
+				7092BFA62F3E45A800AFF096 /* config */,
+				705B83F72F505D59005984B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,9 +140,18 @@
 			children = (
 				7092BF6E2F3E3EEA00AFF096 /* Local Meet.app */,
 				7092BF7B2F3E3EEC00AFF096 /* Local MeetTests.xctest */,
-				7092BF852F3E3EEC00AFF096 /* Local MeetUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7092BFA62F3E45A800AFF096 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				7092BFA92F3E473000AFF096 /* debug.xcconfig */,
+				7092BFA72F3E472A00AFF096 /* release.xcconfig */,
+				7092BFAB2F3E474100AFF096 /* staging.xcconfig */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,16 +164,24 @@
 				7092BF6A2F3E3EEA00AFF096 /* Sources */,
 				7092BF6B2F3E3EEA00AFF096 /* Frameworks */,
 				7092BF6C2F3E3EEA00AFF096 /* Resources */,
+				707BCB562F45004A007D95B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				704FB09A2F50C7790032DB59 /* PBXTargetDependency */,
+				709DA7FE2F50611C000EC69B /* PBXTargetDependency */,
+				709DA7FC2F506118000EC69B /* PBXTargetDependency */,
+				70EDCA2A2F46542500E33CAC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7092BF702F3E3EEA00AFF096 /* Local Meet */,
 			);
 			name = "Local Meet";
 			packageProductDependencies = (
+				70C7AAA52F464F9C00CDD0DE /* Moya */,
+				70EDCA252F46518300E33CAC /* RealmSwift */,
+				704FB09B2F50C79B0032DB59 /* Alamofire */,
 			);
 			productName = "Local Meet";
 			productReference = 7092BF6E2F3E3EEA00AFF096 /* Local Meet.app */;
@@ -124,10 +194,14 @@
 				7092BF772F3E3EEC00AFF096 /* Sources */,
 				7092BF782F3E3EEC00AFF096 /* Frameworks */,
 				7092BF792F3E3EEC00AFF096 /* Resources */,
+				705B83FC2F505D5E005984B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				701933902F50C0970036E3D7 /* PBXTargetDependency */,
+				709DA8022F50656D000EC69B /* PBXTargetDependency */,
+				709DA8002F506568000EC69B /* PBXTargetDependency */,
 				7092BF7D2F3E3EEC00AFF096 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
@@ -135,33 +209,14 @@
 			);
 			name = "Local MeetTests";
 			packageProductDependencies = (
+				705B83F82F505D59005984B7 /* Moya */,
+				705B83FA2F505D5E005984B7 /* RealmSwift */,
+				705B83FE2F505DC1005984B7 /* CombineMoya */,
+				7019338D2F50BF5D0036E3D7 /* Alamofire */,
 			);
 			productName = "Local MeetTests";
 			productReference = 7092BF7B2F3E3EEC00AFF096 /* Local MeetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7092BF842F3E3EEC00AFF096 /* Local MeetUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7092BF952F3E3EEC00AFF096 /* Build configuration list for PBXNativeTarget "Local MeetUITests" */;
-			buildPhases = (
-				7092BF812F3E3EEC00AFF096 /* Sources */,
-				7092BF822F3E3EEC00AFF096 /* Frameworks */,
-				7092BF832F3E3EEC00AFF096 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7092BF872F3E3EEC00AFF096 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				7092BF882F3E3EEC00AFF096 /* Local MeetUITests */,
-			);
-			name = "Local MeetUITests";
-			packageProductDependencies = (
-			);
-			productName = "Local MeetUITests";
-			productReference = 7092BF852F3E3EEC00AFF096 /* Local MeetUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -180,10 +235,6 @@
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 7092BF6D2F3E3EEA00AFF096;
 					};
-					7092BF842F3E3EEC00AFF096 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 7092BF6D2F3E3EEA00AFF096;
-					};
 				};
 			};
 			buildConfigurationList = 7092BF692F3E3EEA00AFF096 /* Build configuration list for PBXProject "Local Meet" */;
@@ -192,9 +243,16 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 7092BF652F3E3EE900AFF096;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				70C7AAA42F464F9C00CDD0DE /* XCRemoteSwiftPackageReference "Moya" */,
+				70EDCA242F46518300E33CAC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				70EDCA282F46537E00E33CAC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				7019338C2F50BF5D0036E3D7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7092BF6F2F3E3EEA00AFF096 /* Products */;
 			projectDirPath = "";
@@ -202,7 +260,6 @@
 			targets = (
 				7092BF6D2F3E3EEA00AFF096 /* Local Meet */,
 				7092BF7A2F3E3EEC00AFF096 /* Local MeetTests */,
-				7092BF842F3E3EEC00AFF096 /* Local MeetUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,17 +269,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7092BFAC2F3E474100AFF096 /* staging.xcconfig in Resources */,
+				7092BFA82F3E472A00AFF096 /* release.xcconfig in Resources */,
+				7092BFAA2F3E473000AFF096 /* debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7092BF792F3E3EEC00AFF096 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7092BF832F3E3EEC00AFF096 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,32 +299,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7092BF812F3E3EEC00AFF096 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		701933902F50C0970036E3D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 7019338F2F50C0970036E3D7 /* Alamofire */;
+		};
+		704FB09A2F50C7790032DB59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 704FB0992F50C7790032DB59 /* Alamofire */;
+		};
 		7092BF7D2F3E3EEC00AFF096 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7092BF6D2F3E3EEA00AFF096 /* Local Meet */;
 			targetProxy = 7092BF7C2F3E3EEC00AFF096 /* PBXContainerItemProxy */;
 		};
-		7092BF872F3E3EEC00AFF096 /* PBXTargetDependency */ = {
+		709DA7FC2F506118000EC69B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7092BF6D2F3E3EEA00AFF096 /* Local Meet */;
-			targetProxy = 7092BF862F3E3EEC00AFF096 /* PBXContainerItemProxy */;
+			productRef = 709DA7FB2F506118000EC69B /* RealmSwift */;
+		};
+		709DA7FE2F50611C000EC69B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 709DA7FD2F50611C000EC69B /* Moya */;
+		};
+		709DA8002F506568000EC69B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 709DA7FF2F506568000EC69B /* Moya */;
+		};
+		709DA8022F50656D000EC69B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 709DA8012F50656D000EC69B /* RealmSwift */;
+		};
+		70EDCA2A2F46542500E33CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 70EDCA292F46542500E33CAC /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7092BF8D2F3E3EEC00AFF096 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7092BFA92F3E473000AFF096 /* debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -307,6 +378,7 @@
 				DEVELOPMENT_TEAM = Z6DC482FV6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -322,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -330,12 +402,15 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
 		7092BF8E2F3E3EEC00AFF096 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7092BFA72F3E472A00AFF096 /* release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -371,6 +446,7 @@
 				DEVELOPMENT_TEAM = Z6DC482FV6;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -380,12 +456,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -400,11 +477,15 @@
 				DEVELOPMENT_TEAM = Z6DC482FV6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Local-Meet-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Local Meet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,12 +494,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-Meet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,11 +518,15 @@
 				DEVELOPMENT_TEAM = Z6DC482FV6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Local-Meet-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Local Meet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,33 +535,57 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-Meet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		7092BF932F3E3EEC00AFF096 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z6DC482FV6;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				HEADER_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/usr/include",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/PrivateFrameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-MeetTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Local Meet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Local Meet";
 			};
 			name = Debug;
@@ -479,64 +593,186 @@
 		7092BF942F3E3EEC00AFF096 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z6DC482FV6;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				HEADER_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/usr/include",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/PrivateFrameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-MeetTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Local Meet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Local Meet";
 			};
 			name = Release;
 		};
-		7092BF962F3E3EEC00AFF096 /* Debug */ = {
+		7092BFA22F3E452800AFF096 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7092BFAB2F3E474100AFF096 /* staging.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Z6DC482FV6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-MeetUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Local Meet";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Staging;
 		};
-		7092BF972F3E3EEC00AFF096 /* Release */ = {
+		7092BFA32F3E452800AFF096 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z6DC482FV6;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Local-Meet-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Local Meet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-MeetUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-Meet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
+		};
+		7092BFA42F3E452800AFF096 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6DC482FV6;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/usr/include",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/PrivateFrameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gleb-Polyakov.Local-MeetTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Local Meet";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Local Meet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Local Meet";
 			};
-			name = Release;
+			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -546,6 +782,7 @@
 			buildConfigurations = (
 				7092BF8D2F3E3EEC00AFF096 /* Debug */,
 				7092BF8E2F3E3EEC00AFF096 /* Release */,
+				7092BFA22F3E452800AFF096 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -555,6 +792,7 @@
 			buildConfigurations = (
 				7092BF902F3E3EEC00AFF096 /* Debug */,
 				7092BF912F3E3EEC00AFF096 /* Release */,
+				7092BFA32F3E452800AFF096 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -564,20 +802,120 @@
 			buildConfigurations = (
 				7092BF932F3E3EEC00AFF096 /* Debug */,
 				7092BF942F3E3EEC00AFF096 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7092BF952F3E3EEC00AFF096 /* Build configuration list for PBXNativeTarget "Local MeetUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7092BF962F3E3EEC00AFF096 /* Debug */,
-				7092BF972F3E3EEC00AFF096 /* Release */,
+				7092BFA42F3E452800AFF096 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7019338C2F50BF5D0036E3D7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.3;
+			};
+		};
+		70C7AAA42F464F9C00CDD0DE /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		70EDCA242F46518300E33CAC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.4;
+			};
+		};
+		70EDCA282F46537E00E33CAC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.63.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7019338D2F50BF5D0036E3D7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7019338C2F50BF5D0036E3D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7019338F2F50C0970036E3D7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7019338C2F50BF5D0036E3D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		704FB0992F50C7790032DB59 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7019338C2F50BF5D0036E3D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		704FB09B2F50C79B0032DB59 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7019338C2F50BF5D0036E3D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		705B83F82F505D59005984B7 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70C7AAA42F464F9C00CDD0DE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		705B83FA2F505D5E005984B7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70EDCA242F46518300E33CAC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		705B83FE2F505DC1005984B7 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70C7AAA42F464F9C00CDD0DE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		709DA7FB2F506118000EC69B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70EDCA242F46518300E33CAC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		709DA7FD2F50611C000EC69B /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70C7AAA42F464F9C00CDD0DE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		709DA7FF2F506568000EC69B /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70C7AAA42F464F9C00CDD0DE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		709DA8012F50656D000EC69B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70EDCA242F46518300E33CAC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		70C7AAA52F464F9C00CDD0DE /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70C7AAA42F464F9C00CDD0DE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		70EDCA252F46518300E33CAC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70EDCA242F46518300E33CAC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		70EDCA292F46542500E33CAC /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70EDCA282F46537E00E33CAC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7092BF662F3E3EE900AFF096 /* Project object */;
 }

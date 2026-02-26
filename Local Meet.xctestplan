@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "E438EC6A-88C2-437D-B078-5856CF3D1D27",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "addressSanitizer" : {
+      "detectStackUseAfterReturn" : true,
+      "enabled" : true
+    },
+    "nsZombieEnabled" : true,
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Local Meet.xcodeproj",
+      "identifier" : "7092BF6D2F3E3EEA00AFF096",
+      "name" : "Local Meet"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Local Meet.xcodeproj",
+        "identifier" : "7092BF7A2F3E3EEC00AFF096",
+        "name" : "Local MeetTests"
+      }
+    }
+  ],
+  "version" : 1
+}
