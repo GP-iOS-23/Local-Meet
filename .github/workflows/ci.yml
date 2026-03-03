@@ -26,10 +26,12 @@ jobs:
 
       - name: Install SwiftLint
         run: brew install swiftlint
+
       - name: Check source files
         run: |
-        echo "Current directory: $(pwd)"
-        find "Local Meet" -name "*.swift" | head -10 || echo "No .swift files found"
+          echo "Current directory: $(pwd)"
+          ls -la "Local Meet"
+          find "Local Meet" -name "*.swift" | head -10 || echo "No .swift files found"
 
       - name: Run SwiftLint
         run: swiftlint lint --strict --path "Local Meet"
