@@ -13,7 +13,7 @@ concurrency:
 env:
   SCHEME: LocalMeetScheme
   TEST_PLAN: LocalMeetTests
-  DESTINATION: generic/platform=iOS Simulator
+  DESTINATION: "platform=iOS Simulator,name=iPhone 16"
 
 jobs:
 
