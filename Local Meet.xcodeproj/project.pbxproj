@@ -16,6 +16,7 @@
 		7092BFAC2F3E474100AFF096 /* staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7092BFAB2F3E474100AFF096 /* staging.xcconfig */; };
 		70B04E542F507A8C0034347E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C82F9C2F5072EA0076BA2A /* XCTest.framework */; };
 		70C7AAA62F464F9C00CDD0DE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 70C7AAA52F464F9C00CDD0DE /* Moya */; };
+		70E0BB9D2F56E4F40079DC5F /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 705B83FE2F505DC1005984B7 /* CombineMoya */; };
 		70EDCA262F46518300E33CAC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 70EDCA252F46518300E33CAC /* RealmSwift */; settings = {ATTRIBUTES = (Required, ); }; };
 		70EDCA272F4651DE00E33CAC /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 70EDCA252F46518300E33CAC /* RealmSwift */; };
 /* End PBXBuildFile section */
@@ -55,7 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		70109FBB2F50A3B10023F389 /* Local Meet.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Local Meet.xctestplan"; sourceTree = "<group>"; };
+		70109FBB2F50A3B10023F389 /* LocalMeetTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LocalMeetTests.xctestplan; sourceTree = "<group>"; };
 		7092BF6E2F3E3EEA00AFF096 /* Local Meet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Local Meet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7092BF7B2F3E3EEC00AFF096 /* Local MeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Local MeetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7092BFA72F3E472A00AFF096 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E0BB9D2F56E4F40079DC5F /* CombineMoya in Frameworks */,
 				7019338E2F50BF5D0036E3D7 /* Alamofire in Frameworks */,
 				70B04E542F507A8C0034347E /* XCTest.framework in Frameworks */,
 				705B83FB2F505D5E005984B7 /* RealmSwift in Frameworks */,
@@ -126,7 +128,7 @@
 		7092BF652F3E3EE900AFF096 = {
 			isa = PBXGroup;
 			children = (
-				70109FBB2F50A3B10023F389 /* Local Meet.xctestplan */,
+				70109FBB2F50A3B10023F389 /* LocalMeetTests.xctestplan */,
 				7092BF702F3E3EEA00AFF096 /* Local Meet */,
 				7092BF7E2F3E3EEC00AFF096 /* Local MeetTests */,
 				7092BF6F2F3E3EEA00AFF096 /* Products */,
