@@ -13,7 +13,7 @@ concurrency:
 env:
   SCHEME: LocalMeetScheme
   TEST_PLAN: LocalMeetTests
-  DESTINATION: generic/platform=iOS Simulator,OS=latest
+  DESTINATION: generic/platform=iOS Simulator
 
 jobs:
 
@@ -26,9 +26,14 @@ jobs:
 
       - name: Install SwiftLint
         run: brew install swiftlint
+      - name: Check source files
+        run: |
+        echo "Current directory: $(pwd)"
+        ls -la "Local Meet"
+        find "Local Meet" -name "*.swift" | head -10 || echo "No .swift files found"
 
       - name: Run SwiftLint
-        run: swiftlint lint --strict "Local Meet"
+        run: swiftlint lint --strict --path "Local Meet"
 
   build:
     name: Build
@@ -48,13 +53,12 @@ jobs:
         with:
           path: |
             ~/.swiftpm
-            ~/Library/Developer/Xcode/DerivedData
           key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
           restore-keys: |
             ${{ runner.os }}-spm-
 
       - name: Resolve dependencies
-        run: xcodebuild -resolvePackageDependencies
+        run: xcodebuild -resolvePackageDependencies -scheme "$SCHEME"
 
       - name: Build
         run: |
@@ -79,7 +83,6 @@ jobs:
         with:
           path: |
             ~/.swiftpm
-            ~/Library/Developer/Xcode/DerivedData
           key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
           restore-keys: |
             ${{ runner.os }}-spm-
