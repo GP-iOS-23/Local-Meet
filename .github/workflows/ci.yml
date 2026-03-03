@@ -34,7 +34,7 @@ jobs:
           find "Local Meet" -name "*.swift" | head -10 || echo "No .swift files found"
 
       - name: Run SwiftLint
-        run: swiftlint lint --strict --path "Local Meet"
+        run: swiftlint lint --strict
 
   build:
     name: Build
