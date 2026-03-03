@@ -1,6 +1,6 @@
 included:
-  - LocalMeet
-  - LocalMeetTests
+  - Local Meet
+  - Local MeetTests
 
 excluded:
   - build
