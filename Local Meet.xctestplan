@@ -13,6 +13,7 @@
       "detectStackUseAfterReturn" : true,
       "enabled" : true
     },
+    "diagnosticCollectionPolicy" : "Always",
     "nsZombieEnabled" : true,
     "performanceAntipatternCheckerEnabled" : true,
     "targetForVariableExpansion" : {
