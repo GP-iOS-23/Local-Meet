@@ -29,7 +29,6 @@ jobs:
       - name: Check source files
         run: |
         echo "Current directory: $(pwd)"
-        ls -al "Local Meet"
         find "Local Meet" -name "*.swift" | head -10 || echo "No .swift files found"
 
       - name: Run SwiftLint
